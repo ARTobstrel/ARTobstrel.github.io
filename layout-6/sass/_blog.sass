@@ -1,0 +1,78 @@
+//Blog
+
+.blog
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+  &__item
+    flex-basis: 380px
+    display: flex
+    flex-direction: column
+
+  &__header
+    position: relative
+
+  &__photo
+    display: block
+
+  &__date
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 60px
+    height: 70px
+    position: absolute
+    bottom: 10px
+    left: -10px
+    background: $colorDate
+    color: $colorWhite
+    z-index: 1
+    text-align: center
+    line-height: 1
+
+
+  &__day
+    display: inline
+    font-size: 30px
+    font-weight: 700
+
+  &__month
+    display: inline
+    font-family: Roboto, sans-serif
+    font-size: 15px
+    font-style: italic
+
+  &__content
+    margin-top: 10px
+
+  &__title
+    color: inherit
+    text-decoration: none
+    text-transform: uppercase
+    font-weight: 700
+    
+    &:hover
+      text-decoration: underline
+
+  &__text
+    margin: 10px 0
+    font-family: Roboto, sans-serif
+    color: $colorText
+
+  &__footer
+    border-top: 1px solid $colorBorderAccordion
+    margin-top: 8px
+    padding-top: 14px
+    font-size: 15px
+    font-style: italic
+    font-weight: 300
+    color: $colorText
+
+    i
+      margin-right: 6px
+      color: $colorDate
+      font-weight: 700
+
+    span
+      margin-right: 12px

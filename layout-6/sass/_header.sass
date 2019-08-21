@@ -1,0 +1,52 @@
+.header
+  padding-top: 30px
+  width: 100%
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: 500
+
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__logo
+    font-size: 30px
+    font-weight: 700
+    color: $colorWhite
+
+.nav
+  padding-top: 5px
+  font-size: 14px
+  text-transform: uppercase
+
+  &__link
+    display: inline-block
+    vertical-align: top
+    margin-right: 55px
+    color: $colorWhite
+    text-decoration: none
+    position: relative
+    transition: color .2s linear
+
+    &:after
+      content: ''
+      opacity: 0
+      width: 100%
+      height: 3px
+      margin-top: 6px
+      background-color: $colorYellow
+      position: absolute
+      top: 100%
+      left: 0
+      z-index: 1
+      transition: opacity .2s linear
+
+    &:hover
+      color: $colorYellow
+
+      &:after
+        opacity: 1
+

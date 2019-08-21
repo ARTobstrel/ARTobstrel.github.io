@@ -1,0 +1,66 @@
+//Works
+.works
+  display: grid
+  grid-template-areas: "img1 img2 img3 img4" "img5 img6 img3 img7"
+  margin-top: 104px
+
+  &__item
+    position: relative
+    background: linear-gradient(to bottom, $colorActive, $colorYellow)
+
+    &:hover .works__image
+      opacity: .1
+
+    &:hover .works__info
+      opacity: 1
+  //
+  &__image
+    display: block
+    max-width: 100%
+    height: auto
+    transition: opacity .1s linear
+
+
+
+  &__info
+    width: 100%
+    padding: 0 15px
+    text-align: center
+    color: $colorWhite
+    position: absolute
+    top: 50%
+    opacity: 0
+
+    transform: translate3d(0, -50%, 0)
+    transition: opacity .2s linear
+
+  &__title
+    font-size: 14px
+    text-transform: uppercase
+
+  &__text
+    font-size: 15px
+    font-weight: 300
+    font-style: italic
+
+#img1
+  grid-area: img1
+
+#img2
+  grid-area: img2
+
+#img3
+  grid-area: img3
+
+#img4
+  grid-area: img4
+
+#img5
+  grid-area: img5
+
+#img6
+  grid-area: img6
+
+#img7
+  grid-area: img7
+

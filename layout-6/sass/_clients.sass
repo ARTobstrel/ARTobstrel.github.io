@@ -1,0 +1,53 @@
+//Clients
+
+.section--clients
+  height: 830px
+  background: url("../img/clients/bg-mounts.jpg") center no-repeat
+  background-size: cover
+
+.clients
+  margin-top: 50px
+  display: flex
+  flex-wrap: wrap
+
+  &__item
+    height: 250px
+    flex-basis: 50%
+    display: flex
+    align-items: flex-start
+
+    img
+      margin-left: 40px
+
+  &__content
+    margin-left: 28px
+    margin-right: 28px
+    display: flex
+    flex-direction: column
+
+  &__name
+    color: $colorMain
+    margin-top: 5px
+    font-weight: 700
+    text-transform: uppercase
+
+  &__prof
+    font-size: 15px
+    margin-top: 5px
+    font-family: Roboto, sans-serif
+    font-style: italic
+    font-weight: 300
+
+    &:after
+      content: ''
+      display: block
+      height: 3px
+      width: 60px
+      margin-top: 10px
+      margin-bottom: 15px
+      background: $colorActive
+
+  &__text
+    font-family: Roboto, sans-serif
+    font-size: 15px
+    color: $colorText

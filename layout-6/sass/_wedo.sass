@@ -1,0 +1,91 @@
+//We do
+.wedo
+  display: flex
+  justify-content: space-around
+
+  &__item
+    flex-basis: 50%
+
+//Accordion
+.accordion
+
+  &__item
+    border: 1px solid $colorBorderAccordion
+    cursor: pointer
+    margin-bottom: 10px
+
+  &__header
+    display: flex
+    align-items: center
+    border-bottom: 1px solid $colorBorderAccordion
+    padding: 15px
+    position: relative
+
+  &__title
+    font-size: 14px
+    color: $colorMain
+    text-transform: uppercase
+    margin-left: 15px
+
+  &__arrow
+    position: absolute
+    top: 40%
+    right: 15px
+    transition: all .5s linear
+    transform: rotate(180deg)
+
+  &__content
+    padding: 15px 20px
+    font-size: 15px
+    color: $colorText
+    font-style: italic
+    font-weight: 300
+    display: none
+    transition: all .5s linear
+
+
+.section--gray
+  background-color: $colorGray
+  height: max-content
+
+.reviews
+
+  &__item
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__content
+    width: 750px
+
+  &__photo
+    border: 3px solid #95e1d3
+    padding: 40px
+
+  &__arrowleft
+    transform: rotate(270deg)
+    cursor: pointer
+
+  &__arrowright
+    transform: rotate(90deg)
+    cursor: pointer
+
+  &__text
+    font-size: 24px
+    font-style: italic
+    font-weight: 300
+    color: $colorText
+
+  &__author
+    font-family: 'Kaushan Script', cursive
+    font-size: 24px
+    color: $colorMain
+
+    &:before
+      content: ''
+      display: inline-block
+      vertical-align: middle
+      width: 60px
+      height: 3px
+      background-color: $colorActive
+      margin-right: 10px

@@ -1,0 +1,219 @@
+//Footer
+.footer
+  background: $colorGray
+  background-size: cover
+  height: 100%
+  padding-top: 80px
+  //padding-bottom: 70px
+
+
+.elem
+  display: flex
+  justify-content: space-between
+  height: 100%
+  max-height: 360px
+
+  //Block MoGo
+  &__mogo
+    width: 40%
+    padding-right: 20px
+
+  &__logo
+    display: inline
+    font-size: 46px
+    font-weight: 700
+    line-height: 1
+    color: $colorText
+
+  &__text
+    margin-top: 20px
+    color: $colorText
+
+  &__followers
+    margin-top: 40px
+    font-weight: 700
+    font-size: 18px
+
+    span
+      font-size: 14px
+      font-weight: 300
+      margin-left: 4px
+
+  &__follow_us
+    margin-top: 12px
+    padding-top: 12px
+    border-top: 1px solid $colorBorderAccordion
+
+    span
+      font-family: Roboto, sans-serif
+      font-size: 15px
+      font-style: italic
+      color: $colorText
+      margin-right: 20px
+
+    i
+      color: $colorDate
+      margin-right: 15px
+      font-size: 18px
+      font-weight: 700
+
+  .subscribe
+    box-sizing: border-box
+    display: flex
+    margin-top: 30px
+    width: 100%
+    max-width: 380px
+
+    &__input
+      width: 60%
+      border-right: 0
+      height: 40px
+      padding: 12px
+      background: $colorWhite
+      font-family: Roboto, sans-serif
+      font-size: 15px
+      font-style: italic
+      color: black
+      font-weight: 300
+      line-height: 1.1
+
+      &::placeholder
+        color: #ccc
+
+      &:focus
+        outline: 0
+        border-color: $colorDate
+
+
+    &__btn
+      width: 40%
+      padding: 0 20px
+      height: 40px
+      background: $colorDate
+      text-align: center
+      color: $colorWhite
+      font-family: Montserrat, sans-serif
+      text-decoration: none
+      font-weight: 700
+      text-transform: uppercase
+      cursor: pointer
+      border: 0
+      line-height: 1.1
+      transition: background .2s linear
+
+      &:hover
+        background: #8baeff
+
+      &:focus
+        outline: 0
+
+
+  &__blogs
+    width: 34%
+
+  &__instagram
+    width: 26%
+
+
+//Block Blogs
+
+.elem__blogs
+  height: 100%
+
+  .blogs__title
+    font-size: 14px
+    text-transform: uppercase
+
+  .blogs__inner
+    margin-top: 25px
+    height: 100%
+    display: flex
+    flex-direction: column
+
+  .blogs__item
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+
+
+  .blogs__text
+    margin-left: 20px
+
+    a
+      text-decoration: none
+      color: inherit
+
+      &:hover
+        text-decoration: underline
+
+    &__let
+      font-family: Montserrat, sans-serif
+      font-size: 12px
+      font-weight: 700
+      text-transform: uppercase
+
+    &__date
+      font-family: Roboto, sans-serif
+      font-size: 13px
+      font-style: italic
+      color: $colorText
+
+
+//Block Instagram
+
+.elem__instagram
+  height: 100%
+  width: 268px
+
+  .instagram__title
+    font-size: 14px
+    text-transform: uppercase
+
+  .instagram__inner
+    margin-top: 25px
+    display: grid
+    grid-template-rows: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 2px
+
+    div
+      display: inline
+      width: 88px
+
+    .instagram__img
+      display: block
+
+  a
+    text-decoration: none
+    color: inherit
+
+    &:hover
+      text-decoration: underline
+
+  .instagram__more
+    font-family: Roboto, sans-serif
+    font-size: 13px
+    font-style: italic
+    font-weight: 300
+    color: $colorText
+    margin-top: 18px
+
+
+//Copyright
+
+.copyright
+  height: 60px
+  margin-top: 70px
+  border-top: 1px solid $colorText
+  position: relative
+
+  &__text
+    font-family: Montserrat, sans-serif
+    font-size: 14px
+    font-weight: 300
+    color: $colorText
+    position: absolute
+    margin: 0
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)

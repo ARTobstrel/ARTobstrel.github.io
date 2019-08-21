@@ -1,0 +1,45 @@
+//Social
+.social
+  display: flex
+  justify-content: center
+
+  &__item
+    text-decoration: none
+    background-color: $colorYellow
+    border: 1px solid $colorActive
+    color: $colorActive
+    font-size: 30px
+    padding: 15px
+    line-height: 1
+    transition: all .3s linear
+
+    &:last-child
+      border-right: 0
+
+    &:hover
+      color: $colorWhite
+      background-color: $colorActive
+
+
+.cards__info
+  margin-top: 20px
+  text-align: center
+
+.cards__name
+  font-family: 'Montserrat', sans-serif
+  font-size: 14px
+  font-weight: bold
+  color: $colorMain
+  text-transform: uppercase
+
+.cards__prof
+  font-family: 'Roboto', sans-serif
+  font-size: 15px
+  color: $colorText
+  font-style: italic
+
+//Logos
+.logos
+  display: flex
+  justify-content: space-between
+  align-items: center
