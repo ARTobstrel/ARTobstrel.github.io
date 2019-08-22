@@ -13,3 +13,5 @@
 [4. MoGo](https://artobstrel.github.io/layout-6/ "MoGo")  
 ```Данная вёрстка не адаптивная, работает только на больших экранах```  
 
+[5. TimberHouse](https://artobstrel.github.io/layout-7/ "TimberHouse")  
+```Даанный проект верстал для посадки на Wordpress```  
