@@ -1,0 +1,149 @@
+@mixin title
+  display: flex
+  flex-direction: column
+  align-items: start
+  height: 100%
+  color: $text_color1
+
+@mixin item_h3
+  h3
+    font-family: 'Exo Medium'
+    font-size: 22px
+    margin-top: 14px
+    margin-bottom: 22px
+
+@mixin items
+  @include item_h3
+  span
+    font-family: 'Exo Regular'
+    font-size: 14px
+    line-height: 2.14em
+    cursor: pointer
+    &:hover
+      text-decoration: underline
+
+.footer
+  height: 332px
+  width: 100%
+  background-color: $color_white
+  position: relative
+  overflow: hidden
+
+  &__content
+    height: 175px
+    width: 100%
+    @include d_flex
+    justify-content: center
+    font-family: 'Exo Regular', sans-serif
+
+  &__start
+    display: flex
+    flex-direction: column
+    height: 100%
+    max-width: 240px
+    align-items: start
+
+  &__exstart
+    display: flex
+    align-items: center
+    justify-content: center
+
+    span
+      font-family: 'Lato', sans-serif
+      font-size: 27px
+      color: #2c2f49
+      text-transform: capitalize
+
+    img
+      margin-left: 4px
+      transform: translateY(3px)
+
+  &__text
+    margin-top: 13px
+    font-family: 'Exo Medium', sans-serif
+    font-size: 14px
+    color: $text_color1
+    line-height: 1.86em
+    letter-spacing: .56px
+
+  &__support
+    @include title
+    @include items
+    margin-left: 62px
+
+  &__about_us
+    @include title
+    @include items
+    margin-left: 110px
+
+  &__email
+    @include title
+    @include item_h3
+    margin-left: 88px
+
+  &__input
+    //width: 100%
+    display: flex
+    justify-content: flex-start
+
+  input
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    padding: 16px 26px
+    width: 215px
+    height: 50px
+    font-family: 'Exo Regular', sans-serif
+    font-size: 16px
+    text-transform: uppercase
+    color: $color_black
+    border: 1px solid #b8b8bf
+    border-bottom-left-radius: 3px
+    border-top-left-radius: 3px
+    background-color: #f6f6f6
+    border-right: none
+
+  &__btn
+    width: 50px
+    height: 50px
+    background-color: #ff6d6d
+    @include d_flex
+    border-top-right-radius: 3px
+    border-bottom-right-radius: 3px
+    cursor: pointer
+    box-shadow: 1px 1px 5px #000000
+
+    &:hover
+      background-color: #FFBAB3
+      color: #892d2f
+
+  &__social
+    margin-top: 20px
+    width: 265px
+    @include d_flex
+    color: #cbcbcb
+    font-size: 22px
+    font-weight: 700
+    -webkit-transition: all .3s
+    -moz-transition: all .3s
+    -ms-transition: all .3s
+    -o-transition: all .3s
+    transition: all .3s
+
+    i
+      margin-right: 30px
+      cursor: pointer
+
+      &:hover
+        color: #505784
+
+  &__decoration
+    position: absolute
+    height: 1000px
+    width: 2000px
+    position: absolute
+    bottom: -1000px
+    right: -1000px
+    background-color: #fb8686
+    transform: rotate(45deg)
+    transform-origin: right bottom

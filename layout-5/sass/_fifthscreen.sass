@@ -1,0 +1,56 @@
+.fifthscreen
+  background: url('../img/fifthscreen/BG2.jpg') no-repeat center
+  -webkit-background-size: cover
+  background-size: cover
+  height: 650px
+
+.flex-derection-column
+  flex-direction: column
+
+.clients
+  width: 100%
+  @include d_flex
+  justify-content: space-between
+
+  &__item
+    @include d_flex
+    flex-direction: column
+    width: 350px
+    padding: 2%
+
+  &__photo
+    width: 75px
+
+  &__name
+    margin-top: 16px
+    font-family: 'Exo Medium', sans-serif
+    font-size: 22px
+    color: $color_white
+    text-transform: capitalize
+
+
+  &__vocation
+    margin-top: 12px
+    font-family: 'Exo Medium', sans-serif
+    font-size: 16px
+    color: $text_color2
+    text-transform: capitalize
+
+  &__text
+    margin-top: 36px
+    font-family: 'Exo Regular', sans-serif
+    font-size: 16px
+    font-style: italic
+    color: $color_white
+    line-height: 1.625em
+    text-align: center
+
+
+.partners
+  margin-top: 70px
+  width: 100%
+  @include d_flex
+  justify-content: space-between
+
+  &__item
+    mask-image: linear-gradient(red, white)

@@ -1,0 +1,87 @@
+.firstscreen
+  background: url("../img/firstscreen/vide-poster.jpg") no-repeat center
+  -webkit-background-size: cover
+  background-size: cover
+  height: 100vh
+  width: 100vw
+
+.panel
+  height: 400px
+  width: 720px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  &__title
+    font-family: 'Exo Thin', sans-serif
+    font-size: 60px
+    text-align: center
+    line-height: 1.25em
+    color: $text_color1
+    
+  &__btn1
+    margin-top: 42px
+    height: 60px
+    width: 60px
+    background-color: $btn1_color_firstscreen
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    position: relative
+    cursor: pointer
+    -webkit-transition: all .3s
+    -moz-transition: all .3s
+    -ms-transition: all .3s
+    -o-transition: all .3s
+    transition: all .3s
+
+    &:hover
+      background-color: #5C5CA4
+
+    //triangle
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      width: 15px
+      top: 35%
+      left: 40%
+      border: 10px solid transparent
+      border-left: 17px solid $btn1_color_triangle
+
+  &__btn2
+    margin-top: 40px
+    height: 50px
+    width: 190px
+    background-color: $text_color2
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    border-radius: 3px
+    font-family: 'Exo Regular', sans-serif
+    font-size: 16px
+    color: $color_white
+    text-transform: uppercase
+    letter-spacing: 2px
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    -webkit-transition: all .3s
+    -moz-transition: all .3s
+    -ms-transition: all .3s
+    -o-transition: all .3s
+    transition: all .3s
+
+    &:hover
+      background-color: #FFBAB3
+      color: #892d2f
+
+
+  &__footer
+    font-family: 'Exo Regular', sans-serif
+    color: $text_color1
+    font-size: 14px
+    letter-spacing: .4px
+    line-height: 0
+    margin-top: 25px

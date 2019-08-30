@@ -1,0 +1,85 @@
+.seventhscreen
+  height: 470px
+  width: 100%
+  background-color: #323969
+
+.trynow
+  height: 100%
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  font-family: 'Exo Medium', sans-serif
+
+  &__name
+    //margin-top: 98px
+    font-size: 16px
+    text-transform: uppercase
+    color: $text_color2
+    letter-spacing: 3.2px
+
+  &__title
+    margin-top: 12px
+    font-size: 40px
+    color: $color_white
+    letter-spacing: 1.6px
+
+  &__input
+    margin-top: 95px
+    display: flex
+    width: 100%
+    justify-content: space-between
+    position: relative
+
+
+    input
+      padding: 16px 28px
+      background-color: #464c77
+      color: $color_white2
+      border-radius: 3px
+      width: 262px
+      height: 50px
+      letter-spacing: .64px
+      font-size: 16px
+      text-transform: uppercase
+
+  &__btn
+    font-family: 'Exo Regular', sans-serif
+    font-size: 16px
+    letter-spacing: .64px
+    width: 262px
+    height: 50px
+    border-radius: 3px
+    background-color: $text_color2
+    color: $color_white2
+    text-transform: uppercase
+    @include d_flex
+    cursor: pointer
+    border: none
+    box-shadow: 2px 2px 5px #000000
+    
+    &:hover
+      background-color: #FFBAB3
+      color: #892d2f
+
+  &__arrow
+    position: absolute
+    right: 2%
+    top: -130%
+    display: flex
+    justify-content: start
+
+    span
+      color: $color_white2
+      letter-spacing: .64px
+
+
+  &__footer
+    margin-top: 52px
+    font-family: 'Exo Regular', sans-serif
+    font-size: 16px
+    letter-spacing: .64px
+    color: $color_white2
+
+

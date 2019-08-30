@@ -1,0 +1,65 @@
+.secondscreen
+  height: 725px
+  width: 100vw
+
+
+.design
+  height: 100%
+  width: 60%
+  background-color: $color_white
+  @include d_flex
+  z-index: 498
+
+
+  &__panel
+    width: 65%
+    font-family: 'Exo Medium', sans-serif
+
+  &__name
+    font-size: 16px
+    color: $text_color2
+    letter-spacing: 2px
+    text-transform: uppercase
+
+  &__title
+    margin-top: 17px
+    font-size: 40px
+    color: $text_color1
+    line-height: 1.25em
+
+    span
+      color: $text_color2
+
+  &__text
+    margin-top: 30px
+    font-size: 16px
+    letter-spacing: .4px
+    color: $text_color1
+
+    p
+      line-height: 1.625em
+
+
+    p:nth-child(2)
+      margin-top: 25px
+
+.decoration
+  height: 100%
+  width: 40%
+  background-color: #ececec
+  position: relative
+  overflow: hidden
+  
+  &::after
+    content: ''
+    height: 1000px
+    width: 2000px
+    position: absolute
+    bottom: -1000px
+    left: 0
+    background-color: #fb8686
+    transform: rotate(-42deg)
+    transform-origin: left top
+
+
+

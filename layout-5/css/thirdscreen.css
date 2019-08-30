@@ -1,0 +1,17 @@
+.thirdscreen {
+  height: 675px; }
+
+.features {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .features__panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  .features__name {
+    font-family: 'Exo Medium', sans-serif;
+    font-size: 16px; }
