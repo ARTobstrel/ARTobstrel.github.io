@@ -10,11 +10,14 @@
 [3. Tinyone](https://artobstrel.github.io/layout-3/ "Tinyone")  
 ```Адаптивная вёрстка по макету```  
 
-[4. Corporate Landing Page](https://artobstrel.github.io/layout-5/ "Corporate LP")  
+[4. Musicon](https://artobstrel.github.io/layout-4/ "Musicon")  
+```Одна страничка сайта с Parallax эффектом```  
+
+[5. Corporate Landing Page](https://artobstrel.github.io/layout-5/ "Corporate LP")  
 ```Адаптивная вёрстка```  
 
-[5. MoGo](https://artobstrel.github.io/layout-6/ "MoGo")  
+[6. MoGo](https://artobstrel.github.io/layout-6/ "MoGo")  
 ```Данная вёрстка не адаптивная, работает только на больших экранах```  
 
-[6. TimberHouse](https://artobstrel.github.io/layout-7/ "TimberHouse")  
+[7. TimberHouse](https://artobstrel.github.io/layout-7/ "TimberHouse")  
 ```Данный проект верстал для посадки на Wordpress```  
