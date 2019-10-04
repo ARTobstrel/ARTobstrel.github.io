@@ -23,3 +23,6 @@
 
 [8. TimberHouse](https://artobstrel.github.io/layout-7/ "TimberHouse")  
 ```Данный проект верстал для посадки на Wordpress```  
+
+[9. Lenoma](https://artobstrel.github.io/layout-9/ "Lenoma")  
+```Интернет-магазин, не адаптивная вёрстка``` 
